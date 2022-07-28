@@ -1,0 +1,26 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = D5DIBRuntime.bpl D5DIBPNGSupport.bpl D5DIBInstall.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+D5DIBRuntime.bpl: D5DIBRuntime.dpk
+  $(DCC)
+
+D5DIBPNGSupport.bpl: D5DIBPNGSupport.dpk
+  $(DCC)
+
+D5DIBInstall.bpl: D5DIBInstall.dpk
+  $(DCC)
+
+

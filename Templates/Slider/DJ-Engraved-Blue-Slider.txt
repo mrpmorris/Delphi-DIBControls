@@ -1,0 +1,28 @@
+-----------------------
+DIB Component Templates
+-----------------------
+
+Title: Engraved Blue Slider
+Date: 3. september 2000
+Author: _DJ_
+Web: www.sguft.com
+Contact: dj@sguft.com
+
+----------------
+Sliders included
+----------------
+
+Horizontal: yes
+Vertical: yes
+
+----------------
+Use Instructions
+----------------
+
+Place a DibContainer,
+a DibSlider and a
+DibImageList.
+Assign the Imagelist
+to the slider, right 
+click the slider
+and choose Load Template.

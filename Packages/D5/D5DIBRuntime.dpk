@@ -1,0 +1,83 @@
+package D5DIBRuntime;
+
+{$R *.RES}
+{$R '..\..\Source\cDIBAnimContainer.dcr'}
+{$R '..\..\Source\cDIBAnimMgr.dcr'}
+{$R '..\..\Source\cDIBBorder.dcr'}
+{$R '..\..\Source\cDIBButton.dcr'}
+{$R '..\..\Source\cDIBDial.dcr'}
+{$R '..\..\Source\cDIBEdit.dcr'}
+{$R '..\..\Source\cDIBFadeLabel.dcr'}
+{$R '..\..\Source\cDIBFormShaper.dcr'}
+{$R '..\..\Source\cDIBImage.dcr'}
+{$R '..\..\Source\cDIBImageList.dcr'}
+{$R '..\..\Source\cDIBKnob.dcr'}
+{$R '..\..\Source\cDIBMagnifier.dcr'}
+{$R '..\..\Source\cDIBPalette.dcr'}
+{$R '..\..\Source\cDIBPanel.dcr'}
+{$R '..\..\Source\cDIBSettings.dcr'}
+{$R '..\..\Source\cDIBSlider.dcr'}
+{$R '..\..\Source\cDIBTimer.dcr'}
+{$R '..\..\Source\cDIBWavList.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Droopy eyes - DIBControls'}
+{$IMPLICITBUILD ON}
+
+requires
+  Vcl50,
+  vcljpg50;
+
+contains
+  cDIB in '..\..\Source\cDIB.pas',
+  cDIBCompressor in '..\..\Source\cDIBCompressor.pas',
+  cDIBControl in '..\..\Source\cDIBControl.pas',
+  cDIBFeatures in '..\..\Source\cDIBFeatures.pas',
+  cDIBFormat in '..\..\Source\cDIBFormat.pas',
+  cDIBGlyphButton in '..\..\Source\cDIBGlyphButton.pas',
+  cDIBStandardCompressors in '..\..\Source\cDIBStandardCompressors.pas',
+  cDIBStandardFilters in '..\..\Source\cDIBStandardFilters.pas',
+  cmpLZH in '..\..\Source\cmpLZH.pas',
+  DIBCommon in '..\..\Source\DIBCommon.pas',
+  cDIBAnimContainer in '..\..\Source\cDIBAnimContainer.pas',
+  cDIBAnimMgr in '..\..\Source\cDIBAnimMgr.pas',
+  cDIBBorder in '..\..\Source\cDIBBorder.pas',
+  cDIBButton in '..\..\Source\cDIBButton.pas',
+  cDIBDial in '..\..\Source\cDIBDial.pas',
+  cDIBEdit in '..\..\Source\cDIBEdit.pas',
+  cDIBFadeLabel in '..\..\Source\cDIBFadeLabel.pas',
+  cDIBFormShaper in '..\..\Source\cDIBFormShaper.pas',
+  cDIBImage in '..\..\Source\cDIBImage.pas',
+  cDIBImageList in '..\..\Source\cDIBImageList.pas',
+  cDIBKnob in '..\..\Source\cDIBKnob.pas',
+  cDIBMagnifier in '..\..\Source\cDIBMagnifier.pas',
+  cDIBPalette in '..\..\Source\cDIBPalette.pas',
+  cDIBPanel in '..\..\Source\cDIBPanel.pas',
+  cDIBSettings in '..\..\Source\cDIBSettings.pas',
+  cDIBSlider in '..\..\Source\cDIBSlider.pas',
+  cDIBTimer in '..\..\Source\cDIBTimer.pas',
+  cDIBWavList in '..\..\Source\cDIBWavList.pas',
+  DIBLZH in '..\..\OpenSource\DIBLZH.PAS',
+  DIBPCXFormat in '..\..\PictureFormats\DIBPCXFormat.pas',
+  DIBRSBFormat in '..\..\PictureFormats\DIBRSBFormat.pas';
+
+end.

@@ -1,0 +1,15 @@
+-----------------------
+DIB Component Templates
+-----------------------
+
+Title: Grey Slider
+Author: _DJ_
+Web: www.sguft.com
+Contact: dj@sguft.com
+
+----------------
+Sliders included
+----------------
+
+Horizontal: yes
+Vertical: yes

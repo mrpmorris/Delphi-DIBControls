@@ -1,0 +1,57 @@
+package D7DIBInstall;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Droopy eyes - DIBControls'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  vcljpg,
+  D7DIBRuntime,
+  vclactnband,
+  vclx,
+  vcl,
+  vclsmp,
+  D7DIBPNGSupport;
+
+contains
+  DIBAnimContainerEditor in '..\..\Editors\DIBAnimContainerEditor.pas' {fmSnapshotEditor},
+  DIBAnimEditor in '..\..\Editors\DIBAnimEditor.pas' {fmAnimEditor},
+  DIBCompressorEditor in '..\..\Editors\DIBCompressorEditor.pas' {fmSelectCompressor},
+  DIBControlEditor in '..\..\Editors\DIBControlEditor.pas',
+  DIBEditor in '..\..\Editors\DIBEditor.pas' {fmDIBEditor},
+  DIBFeatureEditor in '..\..\Editors\DIBFeatureEditor.pas',
+  DIBImageIndexEditor in '..\..\Editors\DIBImageIndexEditor.pas' {fmImageIndexEditor},
+  DIBPaletteEditor in '..\..\Editors\DIBPaletteEditor.pas' {fmDIBPaletteEditor},
+  DIBWavEditor in '..\..\Editors\DIBWavEditor.pas' {fmDIBWavEditor},
+  DIBOpenTools in '..\..\OpenSource\DIBOpenTools.pas',
+  DIBPasParser in '..\..\OpenSource\DIBPasParser.pas',
+  DIBStrConst in '..\..\OpenSource\DIBStrConst.pas',
+  DIBEditorsReg in '..\..\Editors\DIBEditorsReg.pas',
+  DIBCommonEditors in '..\..\Editors\DIBCommonEditors.pas',
+  DIBreg in '..\..\Editors\DIBreg.pas';
+
+end.

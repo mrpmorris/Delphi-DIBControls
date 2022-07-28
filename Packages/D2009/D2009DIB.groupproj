@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{3A659302-AA66-44A5-A318-55A5F5D35059}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="D2009DIBRuntime.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="D2009DIBInstall.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="D2009DIBRuntime">
+			<MSBuild Projects="D2009DIBRuntime.dproj"/>
+		</Target>
+		<Target Name="D2009DIBRuntime:Clean">
+			<MSBuild Targets="Clean" Projects="D2009DIBRuntime.dproj"/>
+		</Target>
+		<Target Name="D2009DIBRuntime:Make">
+			<MSBuild Targets="Make" Projects="D2009DIBRuntime.dproj"/>
+		</Target>
+		<Target Name="D2009DIBInstall">
+			<MSBuild Projects="D2009DIBInstall.dproj"/>
+		</Target>
+		<Target Name="D2009DIBInstall:Clean">
+			<MSBuild Targets="Clean" Projects="D2009DIBInstall.dproj"/>
+		</Target>
+		<Target Name="D2009DIBInstall:Make">
+			<MSBuild Targets="Make" Projects="D2009DIBInstall.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="D2009DIBRuntime;D2009DIBInstall"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="D2009DIBRuntime:Clean;D2009DIBInstall:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="D2009DIBRuntime:Make;D2009DIBInstall:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

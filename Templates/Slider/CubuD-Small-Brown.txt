@@ -1,0 +1,15 @@
+-----------------------
+DIB Component Templates
+-----------------------
+
+Title: Small Brown
+Author: CubuD
+Web: www.stuckindoors.com
+Contact: support@droopyeyes.com
+
+----------------
+Sliders included
+----------------
+
+Horizontal: yes
+Vertical: yes
