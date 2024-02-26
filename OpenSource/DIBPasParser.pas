@@ -7,9 +7,6 @@ unit DIBPasParser;
 (*      Open Source Released 2000                       *)
 (*      http://objectmodeler.com                        *)
 (********************************************************)
-//Warning, exe files on the above mentioned site are known
-//to have had trojans etc written into them in order to
-//scan your hard drive and extract your personal files !!  (Pete)
 
 interface
 
